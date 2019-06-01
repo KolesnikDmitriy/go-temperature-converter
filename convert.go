@@ -22,10 +22,10 @@ func CtoK(t float64) float64 {
 
 // KtoF convert celsius to kelvin
 func KtoF(t float64) float64 {
-	return CtoF(KtoC(t))
+	return (t - 273.15) * 9 / 5 + 32
 }
 
 // FtoK convert celsius to kelvin
 func FtoK(t float64) float64 {
-	return CtoK(FtoC(t))
+	return (t - 32) * 5 / 9 + 273.15
 }
